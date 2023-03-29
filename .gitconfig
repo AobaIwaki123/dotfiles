@@ -1,0 +1,23 @@
+[http]
+	sslVerify = false
+[user]
+	name = aiwaki
+	email = aiwaki@kashiwa.nagaokaut.ac.jp
+[alias]
+	ch = checkout
+	sw = switch
+	br = branch
+	st = status
+    	sts = status -s
+	see = !gh repo view --web
+	la = log --oneline --decorate --graph --branches --tags --remotes --all
+	aliases = !git config --get-regexp alias |  sed 's/^alias.//g' | sed 's/ / = /1'
+	al = aliases
+	cm = commit -m
+	cma = commit -am
+	ps = push
+	ad = add .
+	merge = mg
+	fch = fetch
+[init]
+	defaultBranch = master
