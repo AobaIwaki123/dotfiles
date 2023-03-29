@@ -21,3 +21,5 @@
 	fch = fetch
 [init]
 	defaultBranch = master
+[pull]
+	rebase = false
