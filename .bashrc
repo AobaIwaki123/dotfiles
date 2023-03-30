@@ -141,4 +141,6 @@ alias activate="source venv/bin/activate"
 # pyenv path
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+#eval "$(pyenv init -)"
+# environment path
+export PATH=$PATH:/usr/sbin
