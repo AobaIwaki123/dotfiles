@@ -135,3 +135,5 @@ cdls ()
     \cd "$@" && ls
 }
 alias cd="cdls"
+alias venv="python -m venv venv"
+alias activate="source venv/bin/activate"
