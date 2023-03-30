@@ -1,0 +1,75 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "visualize.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/visualize.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--eval_graphs",
+                "result/20230330_011222/eval/",
+                "--dataset",
+                "twitter",
+                "-p",
+                "result/20230330_011222/parameters.json"
+            ]
+        },
+        {
+            "name": "train.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/train.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--preprocess",
+                "--use_model",
+                "cvae",
+                "--dataset",
+                "twitter",
+                "-p",
+                "parameters.json"
+            ]
+        },
+        {
+            "name": "(No Preprocess)train.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/train.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--use_model",
+                "cvae",
+                "--dataset",
+                "twitter",
+                "-p",
+                "parameters.json"
+            ]
+        },
+        {
+            "name": "eval.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/eval.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--use_model",
+                "cvae",
+                "--dataset",
+                "twitter",
+                "--eval_model",
+                "result/20230330_011222/train/valid_best_weight",
+                "-p",
+                "result/20230330_011222/parameters.json"
+            ]
+        }
+    ]
+}
