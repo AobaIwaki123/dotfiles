@@ -135,5 +135,10 @@ cdls ()
     \cd "$@" && ls
 }
 alias cd="cdls"
+# alias for pyenv
 alias venv="python -m venv venv"
 alias activate="source venv/bin/activate"
+# pyenv path
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
