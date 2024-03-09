@@ -1,8 +1,8 @@
 [http]
 	sslVerify = false
 [user]
-	name = aiwaki
-	email = aiwaki@kashiwa.nagaokaut.ac.jp
+	name = poporu
+	email = aobaiwaki@gmail.com
 [alias]
 	ch = checkout
 	sw = switch
