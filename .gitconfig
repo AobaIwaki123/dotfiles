@@ -1,14 +1,14 @@
 [http]
-	sslVerify = false
+	sslVerify = true
 [user]
-	name = poporu
+	name = AobaIwaki
 	email = aobaiwaki@gmail.com
 [alias]
 	ch = checkout
 	sw = switch
 	br = branch
 	st = status
-    	sts = status -s
+    sts = status -s
 	see = !gh repo view --web
 	la = log --oneline --decorate --graph --branches --tags --remotes --all
 	aliases = !git config --get-regexp alias |  sed 's/^alias.//g' | sed 's/ / = /1'

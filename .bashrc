@@ -128,9 +128,23 @@ alias cd="cdls"
 # alias for pyenv
 alias venv="python -m venv venv"
 alias activate="source venv/bin/activate"
-# pyenv path
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-#eval "$(pyenv init -)"
+
 # environment path
 export PATH=$PATH:/usr/sbin
+PATH=$PATH:$HOME/.local/bin
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/aiwaki/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/aiwaki/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/aiwaki/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/aiwaki/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
