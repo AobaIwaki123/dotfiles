@@ -4,20 +4,20 @@
 	name = AobaIwaki
 	email = aobaiwaki@gmail.com
 [alias]
+	alias = !git config --get-regexp alias |  sed 's/^alias.//g' | sed 's/ / = /1'
+	la = log --oneline --decorate --graph --branches --tags --remotes --all
+	see = !gh repo view --web
+	st = status
 	ch = checkout
 	sw = switch
 	br = branch
-	st = status
-    sts = status -s
-	see = !gh repo view --web
-	la = log --oneline --decorate --graph --branches --tags --remotes --all
-	aliases = !git config --get-regexp alias |  sed 's/^alias.//g' | sed 's/ / = /1'
-	al = aliases
-	cm = commit -m
-	cma = commit -am
-	ps = push
 	ad = add .
+	cm = commit -m
+	cma = commit --amend --no-edit
 	merge = mg
+	mgsq = merge --squash --no-commit
+	ps = push
+	pl = pull
 	fch = fetch
 [init]
 	defaultBranch = master
