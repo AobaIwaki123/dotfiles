@@ -17,6 +17,7 @@
 	psh = push
 	pl = pull
 	fch = fetch
+	clean-unused-branches = "!git remote prune origin && git branch --merged | grep -v '\\*' | xargs -r git branch -d"
 [init]
 	defaultBranch = main
 [pull]
