@@ -38,3 +38,8 @@ The `.zshrc` includes:
 - Custom colorized prompt
 - Conda environment initialization
 - Custom aliases (claude, cdls)
+
+## Development Workflow
+
+- Always commit and push changes after completing tasks
+- Use descriptive commit messages following the existing pattern
