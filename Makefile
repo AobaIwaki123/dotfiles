@@ -6,3 +6,7 @@ help:
 gitconfig: ## Create a symlink for the gitconfig file
 	rm -f ~/.gitconfig
 	ln -s $(HOME)/dotfiles/.gitconfig ~/.gitconfig
+
+zshrc: ## Create a symlink for the zshrc file
+	rm -f ~/.zshrc
+	ln -s $(HOME)/dotfiles/.zshrc ~/.zshrc
